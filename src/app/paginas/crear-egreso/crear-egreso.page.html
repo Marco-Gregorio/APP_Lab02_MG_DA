@@ -1,1 +1,34 @@
 <app-header titulo="Crear Egreso"></app-header>
+
+<ion-content>
+    <ion-card-header>
+        <ion-card-title>Crear Egreso</ion-card-title>
+    </ion-card-header>
+<ion-card>
+
+<ion-item>
+    <ion-label position="fixed">ID: </ion-label>
+    <ion-input type="text" name="id_egreso" [(ngModel)]="datos_formulario.id_egreso"></ion-input>
+    <ion-icon name="eye"></ion-icon>
+  </ion-item>
+<ion-item>
+    <ion-label position="fixed">Descripcion: </ion-label>
+    <ion-input type="text" name="descripcion" [(ngModel)]="datos_formulario.descripcion"></ion-input>
+    <ion-icon name="eye"></ion-icon>
+  </ion-item>
+<ion-item>
+    <ion-label position="fixed">Precio: </ion-label>
+    <ion-input type="text" name="precio" [(ngModel)]="datos_formulario.precio"></ion-input>
+    <ion-icon name="eye"></ion-icon>
+  </ion-item>
+<ion-item>
+    <ion-label position="fixed">ID Usuario: </ion-label>
+    <ion-input type="text" name="id_usuario" [(ngModel)]="datos_formulario.id_usuario"></ion-input>
+    <ion-icon name="eye"></ion-icon>
+  </ion-item>
+
+  <ion-button expand="full" >Cancelar</ion-button>
+  <ion-button (click)="enviarDatos()" expand="full" >Enviar</ion-button>
+
+</ion-card>
+</ion-content>

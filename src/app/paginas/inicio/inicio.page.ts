@@ -17,17 +17,12 @@ export class InicioPage implements OnInit {
   componentes: Componente [] = [
     {
       icono: 'clipboard-outline',
-      nombre: "Registro",
+      nombre: "Listar Usuarios",
       direccion: "/registro",
-    },
-    {
-      icono: 'person-circle-outline',
-      nombre: "Login",
-      direccion: "/login",
-    },
+    },  
     {
       icono: 'wallet-outline',
-      nombre: "Registro Formulario",
+      nombre: "Registro Usuario",
       direccion: "/registro-formulario",
     },
     {
@@ -44,6 +39,11 @@ export class InicioPage implements OnInit {
       icono: 'id-card-outline',
       nombre: "Listar Egreso",
       direccion: "/listar-egreso",
+    },
+    {
+      icono: 'person-circle-outline',
+      nombre: "Desarrolladores",
+      direccion: "/login",
     },
   ]
 

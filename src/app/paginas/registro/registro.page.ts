@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+//importar el servicio
+import { FormularioService } from '../../servicios/formulario.service';
 
 @Component({
   selector: 'app-registro',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroPage implements OnInit {
 
-  constructor() { }
+  constructor() { 
+//    this.obtenerDatosFormulario();
+  }
 
   ngOnInit() {
   }
+  
+// ionViewWillEnter(){
+//   this.obtenerDatosFormulario();
+//  }
+//  obtenerDatosFormulario(){
+//    this.formularioService.obtenerFormulario().subscribe(
+//      (response:any)=>{
+//        this.datos_obtenidos = response.registros;
+//      },
+//      error=>{
+//        alert("error en la peticion")
+//      }
+//    )
+//  }
 
 }

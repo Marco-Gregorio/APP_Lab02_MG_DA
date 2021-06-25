@@ -5,10 +5,12 @@ import { FormularioService } from '../../servicios/formulario.service'
 
 export class EnviarDatos{
   constructor(
-    public dato1: string,
-    public dato2: string,
-    public dato3: string,
-    public dato4: string,
+    public id: string,
+    public nombre: string,
+    public apellido: string,
+    public rut: string,
+    public correo: string,
+    public password: string,
   ){}
 }
 
@@ -22,7 +24,7 @@ export class RegistroFormularioPage implements OnInit {
   datos_formulario;
 
   constructor(private formularioService: FormularioService) {
-    this.datos_formulario = new EnviarDatos("dato 1", "dato 2", "dato 3", "dato 4");
+    this.datos_formulario = new EnviarDatos("dato 1", "dato 2", "dato 3", "dato 4", "dato 5", "dato 6");
   }
 
   ngOnInit() {
