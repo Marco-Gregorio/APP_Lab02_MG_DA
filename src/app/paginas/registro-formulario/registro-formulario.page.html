@@ -1,1 +1,35 @@
 <app-header titulo="Registro Formulario"></app-header>
+
+<ion-content>
+    <ion-card-header>
+        <ion-card-title>Formulario de Registro</ion-card-title>
+    </ion-card-header>
+<ion-card>
+
+<ion-item>
+    <ion-label position="fixed">Dato 1</ion-label>
+    <ion-input type="text" name="dato1" [(ngModel)]="datos_formulario.dato1"></ion-input>
+    <ion-icon name="eye"></ion-icon>
+  </ion-item>
+<ion-item>
+    <ion-label position="fixed">Dato 2</ion-label>
+    <ion-input type="text" name="dato2" [(ngModel)]="datos_formulario.dato2"></ion-input>
+    <ion-icon name="eye"></ion-icon>
+  </ion-item>
+<ion-item>
+    <ion-label position="fixed">Dato 3</ion-label>
+    <ion-input type="text" name="dato3" [(ngModel)]="datos_formulario.dato3"></ion-input>
+    <ion-icon name="eye"></ion-icon>
+  </ion-item>
+<ion-item>
+    <ion-label position="fixed">Dato 4</ion-label>
+    <ion-input type="text" name="dato4" [(ngModel)]="datos_formulario.dato4"></ion-input>
+    <ion-icon name="eye"></ion-icon>
+  </ion-item>
+
+  <ion-button href="#">Cancelar</ion-button>
+  <ion-button (click)="enviarDatos()" expand="full" >Enviar</ion-button>
+
+</ion-card>
+
+</ion-content>
